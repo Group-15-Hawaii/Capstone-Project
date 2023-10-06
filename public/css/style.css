@@ -509,16 +509,67 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
 
 /* styling profile */
 
-.profile-card {
-    height: 450px;
-    width: 675px;
+.slider{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 15%;
+}
+
+.slides{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+.slides::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track{
+    background: transparent;
+}
+.author-info{
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider .slides .profile-card {
     background: linear-gradient(45deg, #340c7d, #243c6c, #5d2dd6, #290461);
     border-radius: 25px;
-    margin-top: auto;
-    margin-left: auto;
-    margin-bottom: 15px;
-    margin-right: auto;
-    display: none;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    width: 1000px;
+    counter-increment: gallery-cell;
+    height: 450px;
+    margin: 1.5rem;
 }
 
 .profile-subtitle h2{
