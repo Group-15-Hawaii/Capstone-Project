@@ -13,27 +13,29 @@
     <!-- Styling-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Studia</title>
 </head>
 <body>
     <!-- navbar section -->
-    <div class="navbar">
-        <div class="title">
+    <nav>
+    <div class="navigasi">
            <a href="#"><h1>Studia ✏️</h1></a> 
         </div>
-        <div class="navigations">
-            <li>
-                <ul><a href="#about" id="programLink">Program</a></ul>
-                <ul><a href="#" id="fasilitasLink">Fasilitas</a></ul>
-                <ul><a href="#biaya-course" id="biayaLink">Pricing</a></ul>
-            </li>
-            <a href="./pages/profiles.html"><button>Developers</button></a>
+        <div id="menu-icon" class="menu-icon">
+            <i class="ph ph-list"></i></div>
+            <ul id="menu-list" class="hidden">
+                <li><a href="#about" id="programLink">Program</a></li>
+                <li><a href="#fasilitas-course" id="fasilitasLink">Fasilitas</a></li>
+                <li><a href="#biaya-course" id="biayaLink">Pricing</a></li>
+                <li><a href="./pages/profiles.html"><button>Developers</button></a></li>
+            </ul>
         </div>
     </div>
+    </nav>
 
     <!-- mengapa harus bergabung section -->
-    <section class="landing">
+    <!-- <section class="landing">
         <div class="landing-header">
             <h1><span>Welcome to Studia ✏️</span></h1>
         </div>
@@ -44,6 +46,19 @@
     
         <div class="landing-img">
             <img src="./img/landing-img.png">
+        </div>
+    </section> -->
+    <section id="landing" class="landing">
+        <h1><span>Welcome to Studia ✏️</span></h2>
+    
+        <div class="row">
+            <div class="landing-img">
+                <img src="./img/landing-img.png">
+            </div>
+            <div class="landing-content">
+                <p>Studia hadir sebagai platform pembelajaran yang menyediakan tempat belajar fleksibel bagi kalian yang memiliki waktu terbatas. Kelas dapat menyesuaikan dengan jadwal yang sudah kamu atur sendiri. Terdiri dari 50% kelas rekaman, 50% kelas siaran langsung, bimbingan mentor dan banyak lagi.</p>    
+            </div>
+
         </div>
     </section>
 
@@ -76,7 +91,7 @@
         <div class="fasilitas-heading">
             <h1>Fasilitas 👍</h1>
         </div>
-        <section class="fasilitas-course">
+        <section class="fasilitas-course" id="fasilitas-course">
             <div class="fasilitas">
                 <div class="gambar-fasilitas">
                     <img src="./img/24jam.png" alt="Fasilitas">
