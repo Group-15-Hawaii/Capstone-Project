@@ -1,0 +1,14 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "Capstone Project for Software Engineering Cycle at RevoU by Team Hawaii Group 15",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raditya Catur Narendra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
