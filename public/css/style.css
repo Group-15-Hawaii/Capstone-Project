@@ -518,7 +518,7 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
     margin-left: auto;
     margin-bottom: 15px;
     margin-right: auto;
-    display: none;
+    display: flex;
 }
 
 .profile-subtitle h2{
