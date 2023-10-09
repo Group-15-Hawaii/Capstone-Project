@@ -681,10 +681,11 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
         font-size: small;
     }
     .landing .landing-img img {
-        justify-content: center;
+        display: none;
+        /* justify-content: center;
         height: 24rem;
         object-fit: cover;
-        object-position: center;
+        object-position: center; */
     }
 
     .about .row {
@@ -692,9 +693,10 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
     }
 
     .about .row .about-img img{
-        height: 24rem;
+        display: none;
+        /* height: 24rem;
         object-fit: cover;
-        object-position: center;
+        object-position: center; */
     }
     
     .testimonials-box{
@@ -702,6 +704,25 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
     }
     .testimonial-heading h1{
         font-size: 1.4rem;
+    }
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .list-footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1rem;
+        padding-top: 0.1rem;
+        margin: auto;
+    }
+    .footer-social-media{
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1rem;
     }
 }
 
