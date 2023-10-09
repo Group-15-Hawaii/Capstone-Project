@@ -1,3 +1,10 @@
+const menuIcon = document.getElementById("menu-icon");
+const menuList = document.getElementById("menu-list");
+
+menuIcon.addEventListener("click",() => {
+    menuList.classList.toggle("hidden");
+});
+
 var slideIndex = 0;
 carousel();
 
@@ -12,6 +19,7 @@ function carousel() {
   x[slideIndex-1].style.display = "flex"; 
   setTimeout(carousel, 4000); 
 }
+
 
 // let d = document;
 

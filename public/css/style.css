@@ -8,14 +8,77 @@ body {
 }
 
 /* styling navbar */
-
+nav {
+    margin: auto;
+    text-decoration: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border:1px solid #191919;
+    z-index: 99999999999;
+    /* position: fixed;
+    width: 100%; */
+}
+nav .navigasi a {
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items:center;
+    font-size: 1.5rem;
+}
+nav ul li a{
+    text-decoration:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #191919;
+    font-weight: 600;
+    padding:8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+nav ul li a:hover{
+    color: #5222d0;
+}
+.menu-icon{
+    font-size: 20px;
+    display: none;   
+}
+nav .navigations a button {
+    background-color: #5222d0;
+    border-radius: 0.5rem;
+}
+@media only screen and (max-width : 700px){
+    nav{
+        flex-wrap: wrap;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul.hidden{
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+}
+/* navbar profil */
 .navbar {
+    justify-content: space-between;
     display: flex;
     background-color: white;
 }
 
 .navbar .title {
     margin-left: 125px;
+    display: flex;
 }
 
 .navbar .title a {
@@ -63,16 +126,52 @@ body {
     font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: medium;
 }
+.navbar button:hover {
+    background-color: #290461;
+}
 
 /* styling mengapa harus bergabung */
+.landing{
+    padding: 5rem 7% 1.4rem;
+    margin: auto; 
+    background-image: linear-gradient(45deg, #b44c8c 0%, #230a7d 100%);
+}
+.landing h1 {
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.landing .row .landing-content p {
+    font-size: 1.5rem;
+    display: flex;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    color: white;
+    justify-content: center;
+}
+.landing .row .landing-content {
+    width: 100%;
+    height: 100%;
+}
+.landing .row {
+    display: flex;
+}
+.landing .row .landing-img img {
+    width: 50%;
+    flex: 1 1 35rem;
+}
 
-.landing {
+
+/* .landing {
+    margin: auto;
     width: auto;
     height: 500px;
     background-color: #230a7d;
     background-repeat: no-repeat;
     background-size: auto;
-    display: block;
+    display: flex;
 }
 
 .landing-header {
@@ -104,21 +203,22 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     text-align: left;
-    color: #white;
+    color: white;
 }
 
 .landing-img {
-    position: absolute;
+    margin: auto;
+    display: flex;
     top: 50%;
     left: 22%;
     transform: translate(-50%, -50%);
     width: 57%;
-    text-align: -webkit-right;
+    text-align: center;
 }
 
 .landing-img img {
     width: 70%;
-}
+} */
 
 /* styling jelajahi program */
 
@@ -576,26 +676,53 @@ footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
     html{
         font-size: 60%;
     }
+    .landing .row {
+        flex-wrap: wrap;
+        font-size: small;
+    }
+    .landing .landing-img img {
+        display: none;
+        /* justify-content: center;
+        height: 24rem;
+        object-fit: cover;
+        object-position: center; */
+    }
 
     .about .row {
         flex-wrap: wrap;
     }
 
     .about .row .about-img img{
-        height: 24rem;
+        display: none;
+        /* height: 24rem;
         object-fit: cover;
-        object-position: center;
+        object-position: center; */
     }
-
-    .layanan .row .layanan-card .tbl-biru {
-        font-size: 60%;
-    } 
     
     .testimonials-box{
         width: 100%;
     }
     .testimonial-heading h1{
         font-size: 1.4rem;
+    }
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .list-footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1rem;
+        padding-top: 0.1rem;
+        margin: auto;
+    }
+    .footer-social-media{
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1rem;
     }
 }
 
